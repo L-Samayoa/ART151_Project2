@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(128, 128, 128);
+  background(128, 128, 128, 10);
   for( let i = 0; i < pos; i++ ){
     shapeList[i].move();
     shapeList[i].display();
@@ -90,7 +90,7 @@ class CircleShape {
     this.degStart = map( mouseY, 0, height, 0, 10);
     this.degreeSpeed = map( mouseX, 0, width, -5, 5);
     this.lineColor = random(0, 255);
-    this.dim = random(0, 100);
+    this.dim = random(0, 50);
     this.distFromCenter = random(0, 400);
     this.circleColor = random( 0, 255);
   }
